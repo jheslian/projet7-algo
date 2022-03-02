@@ -1,0 +1,25 @@
+Share-PATS	27.7
+Share-JWGF	48.69
+Share-ALIY	29.08
+Share-NDKR	33.06
+Share-PLLK	19.94
+Share-FWBE	18.31
+Share-LFXB	14.83
+Share-ZOFA	25.32
+Share-ANFX	38.55
+Share-FAPS	32.57
+Share-LXZU	4.24
+Share-XQII	13.42
+Share-ECAQ	31.66
+Share-JGTW	35.29
+Share-IXCI	26.32
+Share-DWSK	29.49
+Share-ROOM	15.06
+Share-VCXT	29.19
+Share-YFVZ	22.55
+Share-OCKK	3.16
+Share-JMLZ	1.27
+Share-DYVD	0.28
+
+Total costs: 499.98
+Total profits: 197.77

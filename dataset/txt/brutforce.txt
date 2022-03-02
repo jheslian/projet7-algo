@@ -1,0 +1,13 @@
+Action-4	70
+Action-5	60
+Action-6	80
+Action-8	26
+Action-10	34
+Action-11	42
+Action-13	38
+Action-18	10
+Action-19	24
+Action-20	114
+
+Total costs: 498.00
+Total profits: 99.08
