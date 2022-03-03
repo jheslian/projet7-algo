@@ -9,8 +9,15 @@ import itertools
 from pathlib import Path
 
 
-def brutforce(file_path: str, budget=500):
-    datas = pd.read_csv(file_path, )
+def save_to_txt(file_path, content):
+    file = open(f'dataset/txt/brutforce_{Path(file_path).stem}.txt', 'w')
+    for key, val in content.items():
+        file.write(f"{key}\t{val}\n", )
+    file.close()
+
+
+def get_csv_content(file_path):
+    datas = pd.read_csv(file_path)
     profit = datas.price * (datas.profit / 100)
     df = pd.DataFrame({
         'action': datas.name,
@@ -18,26 +25,30 @@ def brutforce(file_path: str, budget=500):
         'percentage': datas.profit,
         'profit': profit
     })
+    return df
 
+
+def brutforce(file_path: str, budget=500):
+    csv_content = get_csv_content(file_path)
     tmp_profit = 0
     price_list = ()
+    action_bought = {}
     content = pd.DataFrame()
 
-    file = open(f'dataset/txt/{Path(file_path).stem}.txt', 'w')
-    for i in df.itertuples():
-        for p_list in itertools.combinations(df.price, i.Index + 1):
+    for i in csv_content.itertuples():
+        for p_list in itertools.combinations(csv_content.price, i.Index + 1):
             total_price = sum(p_list)
 
             if 495 < total_price <= budget:
-                res = df.loc[df['price'].isin(p_list)]
+                res = csv_content.loc[csv_content['price'].isin(p_list)]
                 total_profit = sum(res.profit)
                 if tmp_profit < total_profit:
                     tmp_profit = total_profit
                     price_list = res.price
                     content = res
     for rec_index, rec in content.iterrows():
-        file.write(f"{rec['action']}\t{rec['price']}\n")
+        action_bought[rec['action']] = rec['price']
 
-    file.write("\nTotal costs: {:.2f}".format(sum(price_list)))
-    file.write("\nTotal profits: {:.2f}".format(tmp_profit))
-    file.close()
+    action_bought['Costs:'] = "{:.2f}".format(sum(price_list))
+    action_bought['Profits:'] = "{:.2f}".format(tmp_profit)
+    save_to_txt(file_path, action_bought)

@@ -23,6 +23,5 @@ Share-CGJM	17.21
 Share-EVUW	4.44
 Share-FHZN	6.1
 Share-DBUJ	0.07
-
-Total costs: 500.00
-Total profits: 198.51
+Costs:	500.00
+Profits:	198.51

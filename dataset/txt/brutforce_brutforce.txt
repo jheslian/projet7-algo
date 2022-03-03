@@ -8,6 +8,5 @@ Action-13	38
 Action-18	10
 Action-19	24
 Action-20	114
-
-Total costs: 498.00
-Total profits: 99.08
+Costs:	498.00
+Profits:	99.08

@@ -1,0 +1,14 @@
+Action-10	34
+Action-6	80
+Action-13	38
+Action-19	24
+Action-4	70
+Action-20	114
+Action-5	60
+Action-11	42
+Action-18	10
+Action-17	4
+Action-16	8
+Action-14	14
+Costs:	498.00
+Profits:	97.48

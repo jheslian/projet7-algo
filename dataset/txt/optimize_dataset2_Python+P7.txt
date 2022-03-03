@@ -20,6 +20,5 @@ Share-YFVZ	22.55
 Share-OCKK	3.16
 Share-JMLZ	1.27
 Share-DYVD	0.28
-
-Total costs: 499.98
-Total profits: 197.77
+Costs:	499.98
+Profits:	197.77
