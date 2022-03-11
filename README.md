@@ -2,7 +2,7 @@
 
 ## Objectives:
 
-- Given a csv with 20 actions, create a file `brutforce.py` that contains a brutforce solution that test all the  possible action that fit the budget and that has the best profit
+- Given a csv with 20 actions, create a file `brutforce.py` that contains a brutforce algorithm that test all the possible action that fits the budget of 500.00 and that has the best profit
 - Given 2 csv files with 1000 actions each, create a file `optimized.py` with an algorithm that optimise the bruforce solution.
 
 
